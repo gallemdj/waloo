@@ -1,0 +1,8 @@
+# WALOO static site — Apache (Bluehost)
+DirectoryIndex index.html
+
+# Custom 404 (Astro generates /404/index.html)
+ErrorDocument 404 /404/index.html
+
+# Optional: deny directory listings
+Options -Indexes
