@@ -2,3 +2,5 @@ User-agent: *
 Allow: /
 
 Sitemap: https://waloo.co/sitemap-index.xml
+
+# Curated map for AI agents / LLM tools: https://waloo.co/llms.txt

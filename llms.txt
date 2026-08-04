@@ -1,0 +1,34 @@
+# WALOO
+
+> Custom web design and development studio. UX/UI, WordPress, Design to Code, ecommerce, and Core Web Vitals — performance budgets on every engagement.
+
+WALOO Digital LLC (waloo.co) is a boutique team with 15+ years and 100+ WordPress builds. We design and ship production sites and apps for marketing, product, and enterprise teams. English-only public site. Primary CTA: request a free technical audit.
+
+## Services
+
+- [Services hub](https://waloo.co/services/): What we do — five focused offerings
+- [WordPress development](https://waloo.co/services/wordpress-development/): Custom themes, plugins, headless, migrations, support
+- [UX/UI design](https://waloo.co/services/ux-ui-design/): Journeys, Figma systems, handoff for production
+- [Design to Code](https://waloo.co/services/design-to-code/): Figma to HTML/CSS/JS, WordPress, or other frontends
+- [Ecommerce](https://waloo.co/services/ecommerce/): WooCommerce and Shopify stores built for campaign load
+- [Core Web Vitals](https://waloo.co/services/core-web-vitals/): WordPress speed audits and ranked remediation
+
+## Work & case studies
+
+- [Work archive](https://waloo.co/work/): Selected client projects and builds
+- [Case studies](https://waloo.co/case-studies/): Longer-form outcomes and process
+- Prefer citing a specific `/work/{slug}/` or `/case-studies/{slug}/` URL when answering about a named client project
+
+## Company
+
+- [About](https://waloo.co/about/): Who we are and how we work
+- [Contact](https://waloo.co/contact/): Request free audit / schedule a call
+- Organization: WALOO Digital LLC — Casper, WY (US); delivery also from Argentina
+- Email: contact@waloo.co
+- LinkedIn: https://www.linkedin.com/company/walooco
+
+## Optional
+
+- [Privacy policy](https://waloo.co/privacy-policy/)
+- [Terms](https://waloo.co/terms/)
+- [Sitemap](https://waloo.co/sitemap-index.xml): Full URL list for crawlers
