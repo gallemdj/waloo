@@ -760,7 +760,57 @@
     if (window.matchMedia && window.matchMedia("(max-width: 56.26rem)").matches) {
       ensureHeroVisible();
     }
+
+    revealSvcBandBodies();
   }
+
+  var svcBandRevealGen = 0;
+
+  function revealSvcBandBodies() {
+    var my = ++svcBandRevealGen;
+    var root = document.documentElement;
+    root.classList.remove("svc-band-bodies-ready");
+
+    if (!document.querySelector(".svc-band__body")) return;
+
+    function play() {
+      if (my !== svcBandRevealGen) return;
+      requestAnimationFrame(function () {
+        if (my !== svcBandRevealGen) return;
+        root.classList.add("svc-band-bodies-ready");
+      });
+    }
+
+    var vtAnims = document.getAnimations({ subtree: true }).filter(function (anim) {
+      return anim.effect && anim.effect.pseudoElement;
+    });
+
+    if (!vtAnims.length) {
+      play();
+      return;
+    }
+
+    var done = false;
+    function once() {
+      if (done || my !== svcBandRevealGen) return;
+      done = true;
+      play();
+    }
+
+    Promise.all(
+      vtAnims.map(function (anim) {
+        return anim.finished.catch(function () {});
+      }),
+    ).then(once);
+    setTimeout(once, 650);
+  }
+
+  document.addEventListener("astro:before-swap", function (event) {
+    document.documentElement.classList.remove("svc-band-bodies-ready");
+    if (event.newDocument && event.newDocument.documentElement) {
+      event.newDocument.documentElement.classList.remove("svc-band-bodies-ready");
+    }
+  });
 
   initWalooPage();
   document.addEventListener("astro:page-load", initWalooPage);
